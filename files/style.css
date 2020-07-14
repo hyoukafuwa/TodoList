@@ -1,0 +1,159 @@
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@300;500&display=swap');
+
+* {
+    list-style: none;
+    font-family: 'Noto Sans JP', sans-serif;
+}
+
+body {
+    background: rgba(59,164,255,1);
+    background: -moz-linear-gradient(left, rgba(59,164,255,1) 0%, rgba(32,124,229,1) 100%);
+    background: -webkit-gradient(left top, right top, color-stop(0%, rgba(59,164,255,1)), color-stop(100%, rgba(32,124,229,1)));
+    background: -webkit-linear-gradient(left, rgba(59,164,255,1) 0%, rgba(32,124,229,1) 100%);
+    background: -o-linear-gradient(left, rgba(59,164,255,1) 0%, rgba(32,124,229,1) 100%);
+    background: -ms-linear-gradient(left, rgba(59,164,255,1) 0%, rgba(32,124,229,1) 100%);
+    background: linear-gradient(to right, rgba(59,164,255,1) 0%, rgba(32,124,229,1) 100%);
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#3ba4ff', endColorstr='#207ce5', GradientType=1);
+}
+
+h1 {
+    text-align: center;
+    font-style: italic;
+    color: white;
+}
+
+.todoElement {
+    height: 40%;
+    padding-bottom: 20px;
+    width: 30rem;
+    -webkit-box-shadow: 1px 1px 5px 0px rgba(0,0,0,0.75);
+    -moz-box-shadow: 1px 1px 5px 0px rgba(0,0,0,0.75);
+    box-shadow: 1px 1px 5px 0px rgba(0,0,0,0.75);
+    margin: auto;
+    overflow-wrap: break-word;
+    background-color: white;
+}
+
+form {
+    display: flex;
+    justify-content: center;
+}
+
+form .input {
+    height: 100px;
+    border-top: 5px;
+    display: flex;
+    align-items: center;
+}
+
+form .error {
+    color: white;
+    position: relative;
+    bottom: 20px;
+    font-weight: 400;
+    font-size: 10px;
+    display: none;
+}
+
+input[type="text"] {
+    border-top: none;
+    border-left: none;
+    border-right: none;
+    outline: none;
+    background: transparent;
+    border-bottom: solid 1.5px white;
+    color: white; font-style: italic;
+    font-weight: 400;
+}
+
+form button {
+    border: none;
+    outline: none;
+    margin-left: 10px;
+    cursor: pointer;
+    border-radius: 3px;
+    -webkit-border-radius: 3px;
+    -moz-border-radius: 3px;
+    -ms-border-radius: 3px;
+    -o-border-radius: 3px;
+    width: 40px;
+    height: 25px;
+    background-color: white;
+    color: black;
+}
+
+li {
+    width: 80%;
+    height: 30%;
+    padding-top: 0.5px;
+    padding-left: 10px;
+    /*display: flex;*/
+    overflow-wrap: initial;
+}
+
+.todos:hover .fa-trash {
+    display: inline;
+}
+
+ul {
+    display: flex;
+    flex-direction: column;
+}
+
+.todos {
+    padding: 5px 0;
+    width: 25rem;
+    border-bottom: 2px solid black;
+    display: flex;
+}
+
+.todos .fa-trash {
+    position: relative;
+    left: 30px;
+    display: none;
+    cursor: pointer;
+}
+
+.todos .fa-circle, .todos .fa-check-circle {
+    padding-top: 5.5px;
+}
+
+.todos .fa-trash:hover, .fa-circle:hover {
+    color: red;
+}
+
+.fa-check-circle:hover {
+    color: green;
+}
+
+input[type="checkbox"] {
+    position: relative;
+    top: 7px;
+    width: 10px;
+}
+
+.todoCompleted {
+    text-decoration: line-through;
+    opacity: 0.5;
+}
+
+/*
+.addTodoList {
+    position: absolute;
+    bottom: 1.5em;
+    background-color: DodgerBlue;
+    left: 1.5em;
+    border: none;
+    width: 60px;
+    height: 60px;
+    border-radius: 100%;
+    -webkit-border-radius: 100%;
+    -moz-border-radius: 100%;
+    -ms-border-radius: 100%;
+    -o-border-radius: 100%;
+    font-size: 20px;
+    outline: none;
+    color: white;
+    cursor: pointer;
+}
+*/
