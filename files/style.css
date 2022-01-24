@@ -136,24 +136,3 @@ input[type="checkbox"] {
     text-decoration: line-through;
     opacity: 0.5;
 }
-
-/*
-.addTodoList {
-    position: absolute;
-    bottom: 1.5em;
-    background-color: DodgerBlue;
-    left: 1.5em;
-    border: none;
-    width: 60px;
-    height: 60px;
-    border-radius: 100%;
-    -webkit-border-radius: 100%;
-    -moz-border-radius: 100%;
-    -ms-border-radius: 100%;
-    -o-border-radius: 100%;
-    font-size: 20px;
-    outline: none;
-    color: white;
-    cursor: pointer;
-}
-*/
